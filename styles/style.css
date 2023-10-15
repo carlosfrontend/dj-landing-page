@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   overflow: hidden;
+  background-color: hwb(0 49% 49%);
 }
 
 .main-container {
