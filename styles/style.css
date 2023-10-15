@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.text-size {
+  font-size: 4rem;
+}
+
+.mixin {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid #222222;
+  transition: transform, filter;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.set-disc-animated {
+  animation: tocadiscos 4s linear 0s infinite;
+}
+
+.mixin:hover {
+  /* transform: rotate(-360deg); */
+  transition: transform;
+  filter: drop-shadow(16px 16px 20px #322f2f) invert(85%);
+  animation: tocadiscosStop 0.500s linear 0s;
+}
+
+@keyframes tocadiscos {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg)}
+}
